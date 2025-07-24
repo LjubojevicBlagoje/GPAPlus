@@ -1,0 +1,127 @@
+/* Reset and basic layout */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    height: 100%;
+    background-color: #f5f7fa;
+    display: flex;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    background-color: #1e293b;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+    max-width: 100%;
+    border-radius: 8px;
+    object-fit: contain;
+}
+
+.logo h1 {
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.nav-btn {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    text-align: left;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+
+.nav-btn:hover,
+.nav-btn.active {
+    background-color: #334155;
+}
+
+/* Main content panel */
+.main-content {
+    flex: 1;
+    padding: 30px;
+    overflow-y: auto;
+}
+
+.view-section {
+    display: none;
+}
+
+.active-view {
+    display: block;
+}
+
+#course-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 15px;
+}
+
+#course-table th,
+#course-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+#add-course-btn,
+#calculate-btn {
+  padding: 10px 16px;
+  margin-right: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: #1d4ed8;
+  color: white;
+}
+
+#add-course-btn:hover,
+#calculate-btn:hover {
+  background-color: #2563eb;
+}
+
+#gpa-result {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 18px;
+}
